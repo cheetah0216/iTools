@@ -1,6 +1,25 @@
 {
-  "db":"time_db",
+  "db":"itools_db",
   "table":[
-    ""
+        {
+          "table_name":"time_info_detail",
+          "field_name":"uid|date|what_day|start_time|end_time|seconds|category_id|label_id",
+          "field_type":"INTEGER|TEXT|TEXT|TEXT|TEXT|INTEGER|INTEGER|INTEGER"
+        },
+        {
+          "table_name":"category_info",
+          "field_name":"category_id|category_info",
+          "field_type":"INTEGER|TEXT"
+        },
+        {
+          "table_name":"label_info",
+          "field_name":"label_id|label_info",
+          "field_type":"INTEGER|TEXT"
+        },
+        {
+          "table_name":"lable_relation",
+          "field_name":"relation_id|label_id|category_id",
+          "field_type":"INTEGER|INTEGER|INTEGER"
+        }
     ]
 }
